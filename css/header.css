@@ -72,6 +72,7 @@ header img {
   gap: 50px;
   position: relative;
   border-bottom: 1px solid black;
+
 }
 
 
@@ -79,6 +80,9 @@ header img {
 .list {
   margin-top: 15px;
   font-size: 25px;
+  /* position: relative; */
+  z-index:999;
+  padding-bottom: 15px;
 }
 .list > a {
   position: relative;
@@ -87,7 +91,7 @@ color: black;
 .list > a::after {
   content: "";
   position: absolute;
-  bottom: -3px;
+  bottom: -15px;
   left: 0;
   width: 0%;
   height: 5px;
@@ -107,15 +111,26 @@ color: black;
     
   display: none;
   position: absolute;
-  top: 88%;
+  top: 87%;
   left: 0;
   border-bottom: 1px solid black;
   width: 100%;
   gap: 20px;
   padding: 20px 0;
+  /* background-color: red; */
 
 }
 
+.sub-list::before{
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  background-color:rgba(255,255,255,0.8);
+}
 .sub-list li > a {
   position: relative;
   color: gray;
@@ -180,7 +195,7 @@ color: black;
   border: 1px solid black;
   border-radius: 20px;
   text-align: center;
-  font-weight: bold;
   padding-top: 10px;
   color: black;
 }
+

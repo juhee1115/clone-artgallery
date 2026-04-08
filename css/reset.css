@@ -1,6 +1,6 @@
 @import url("header.css");
 @import url("main.css");
-
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
 
 * {
   box-sizing: border-box;
@@ -29,3 +29,9 @@ ul {
   border-bottom: 1px solid black;
   padding: 40px 0;
 }
+
+body{
+   font-family: 'Spoqa Han Sans Neo', 'sans-serif'; 
+}
+
+
